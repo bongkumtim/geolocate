@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Geolocation</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
+
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -17,8 +12,8 @@
         padding: 0;
       }
     </style>
-  </head>
-  <body>
+
+
     <div id="map"></div>
     <script>
       // Note: This example requires that you consent to location sharing when
@@ -29,7 +24,8 @@
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -34.397, lng: 150.644},
-          zoom: 6
+          zoom: 6,
+          mapTypeId: 'roadmap'
         });
         infoWindow = new google.maps.InfoWindow;
 
@@ -65,5 +61,5 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqfDhNr0TNirq3FK7dR7TkqrTKJeQ98dc&callback=initMap">
     </script>
-  </body>
-</html>
+
+
